@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-image="https://media.giphy.com/media/3osxYzuMvUJJcqzND2/giphy.gif">
+					<strong> xxx :<br>1st xxx 2020</strong>
+				</section>
+				<section>xxxx update<img src="https://media.giphy.com/media/l2JeiZLt6YVpu8IiQ/giphy.gif" height="75%" width="75%">
+
+				</section>
+				<section> xxx's Leadership update
+					<section><img src="slides/xxx/slides1.png" height="100%" width="100%"></section>
+					<section><img src="slides/xxx/slides2.png" height="100%" width="100%"></section>
+				</section>
+				<section>New Starters (song choice recommended by xxx)<br>
+					<img src="https://media.giphy.com/media/Jv8kZMfrPxJnO/giphy.gif" height="100%" width="100%">
+					<iframe width="0" height="0" src="https://www.youtube.com/embed/XHFy3YWpRx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-autoplay data-ignore></iframe>
+				<br><br><br><br><br></section>
+				<section>New Starters
+				<section>
+					<img src="images/xxx.jpg" height="25%" width="25%">
+						<pre id="typewriter">
+<span class="var-highlight">var</span> xxxx= {
+	   name: <span class="string-highlight">'xxx'</span>,
+	   favourite book: <span class="string-highlight">'xxx'</span>,
+	   hobby / interest: <span class="string-highlight">'xxx'</span>,
+	   fact:[<span class="string-highlight">'xxx'</span>,
+	                <span class="string-highlight">'xxx'</span>;
+}; </pre>
+
+						<script>function setupTypewriter(t) {
+							    var HTML = t.innerHTML;
+
+							    t.innerHTML = "";
+
+							    var cursorPosition = 0,
+							        tag = "",
+							        writingTag = false,
+							        tagOpen = false,
+							        typeSpeed = 100,
+						        tempTypeSpeed = 0;
+
+							    var type = function() {
+
+							        if (writingTag === true) {
+							            tag += HTML[cursorPosition];
+							        }
+
+							        if (HTML[cursorPosition] === "<") {
+							            tempTypeSpeed = 0;
+							            if (tagOpen) {
+							                tagOpen = false;
+							                writingTag = true;
+							            } else {
+							                tag = "";
+							                tagOpen = true;
+							                writingTag = true;
+							                tag += HTML[cursorPosition];
+							            }
+							        }
+							        if (!writingTag && tagOpen) {
+							            tag.innerHTML += HTML[cursorPosition];
+							        }
+							        if (!writingTag && !tagOpen) {
+							            if (HTML[cursorPosition] === " ") {
+							                tempTypeSpeed = 0;
+							            }
+							            else {
+							                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+							            }
+							            t.innerHTML += HTML[cursorPosition];
+							        }
+							        if (writingTag === true && HTML[cursorPosition] === ">") {
+							            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+							            writingTag = false;
+							            if (tagOpen) {
+							                var newSpan = document.createElement("span");
+							                t.appendChild(newSpan);
+							                newSpan.innerHTML = tag;
+							                tag = newSpan.firstChild;
+							            }
+							        }
+
+							        cursorPosition += 1;
+							        if (cursorPosition < HTML.length - 1) {
+							            setTimeout(type, tempTypeSpeed);
+							        }
+
+							    };
+
+							    return {
+							        type: type
+							    };
+							}
+
+							var typer = document.getElementById('typewriter');
+
+							typewriter = setupTypewriter(typewriter);
+
+							typewriter.type();
+						</script>
+					</section>
+					<section>
+						<img src="images/nina.jpg" height="25%" width="25%">
+						<pre id="typewriter2">
+<span class="var-highlight2">var</span> xxx= {
+	 name: <span class="string-highlight">'xxx'</span>,
+	 alias: <span class="string-highlight">'xxxx'</span>,
+	 favourite movie: <span class="string-highlight">'xxx'</span>,
+	 food: <span class="string-highlight">'xxx'</span>,
+	 criminal record: <span class="string-highlight">'xxx'</span>,
+	 from Essex??:[<span class="string-highlight">'xxx'</span>,
+}; </pre>
+
+							<script>
+
+
+
+							function setupTypewriter2(t) {
+
+								    var HTML = t.innerHTML;
+
+								    t.innerHTML = "";
+
+								    var cursorPosition = 0,
+								        tag = "",
+								        writingTag = false,
+								        tagOpen = false,
+								        typeSpeed = 200,
+							        tempTypeSpeed = 0;
+
+								    var type = function() {
+
+								        if (writingTag === true) {
+								            tag += HTML[cursorPosition];
+								        }
+
+								        if (HTML[cursorPosition] === "<") {
+								            tempTypeSpeed = 0;
+								            if (tagOpen) {
+								                tagOpen = false;
+								                writingTag = true;
+								            } else {
+								                tag = "";
+								                tagOpen = true;
+								                writingTag = true;
+								                tag += HTML[cursorPosition];
+								            }
+								        }
+								        if (!writingTag && tagOpen) {
+								            tag.innerHTML += HTML[cursorPosition];
+								        }
+								        if (!writingTag && !tagOpen) {
+								            if (HTML[cursorPosition] === " ") {
+								                tempTypeSpeed = 0;
+								            }
+								            else {
+								                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+								            }
+								            t.innerHTML += HTML[cursorPosition];
+								        }
+								        if (writingTag === true && HTML[cursorPosition] === ">") {
+								            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+								            writingTag = false;
+								            if (tagOpen) {
+								                var newSpan = document.createElement("span");
+								                t.appendChild(newSpan);
+								                newSpan.innerHTML = tag;
+								                tag = newSpan.firstChild;
+								            }
+								        }
+
+								        cursorPosition += 1;
+								        if (cursorPosition < HTML.length - 1) {
+								            setTimeout(type, tempTypeSpeed);
+								        }
+
+								    };
+
+								    return {
+								        type: type
+								    };
+								}
+
+								var typer = document.getElementById('typewriter2');
+
+								typewriter2 = setupTypewriter2(typewriter2);
+
+								typewriter2.type();
+							</script>
+					</section>
+					<section><strong>xxx</strong> & <strong>xxx</strong> who will be helping us with <strong>xxx</strong></section>
+				</section>
+				<section>xxx Update<br>
+					<img src="https://media.giphy.com/media/9DtxZQgZDIblwxSDUd/giphy.gif" height="100%" width="100%">
+				</section>
+				<section>xxx Update
+					<section><img src="slides/xxx/slide1.png" height="100%" width="100%"></section>
+					<section><img src="slides/xxx/slide2.png" height="100%" width="100%"></section>
+				</section>
+				<section>Update from the xxx (fyi, this is an image of my favourite American Poet, Hart Crane)<br>
+					<img src="images/crane.jpg" height="50%" width="50%">
+				</section>
+				<section> Arran :)
+					<section><img src="slides/xxx/slide1.png" height="100%" width="100%"></section>
+					<section><img src="slides/xxx/slide2.png" height="100%" width="100%"></section>
+				</section>
+				<section>xxx Assemble!
+					<br>
+					<img src="https://media.giphy.com/media/UGb51kWDGIOCA/giphy.gif" height="75%" width="75%">
+				</section>
+				<section>xxx
+					<section><img src="slides/xxx/slide1.png" height="100%" width="100%"></section>
+					<section><img src="slides/xxx/slide2.png" height="100%" width="100%"></section>
+				</section>
+				<section>xxx
+					<section><img src="slides/xxx/slide1.png" height="100%" width="100%"></section>
+					<section><img src="slides/xxx/slide2.png" height="100%" width="100%"></section>
+				</section>
+				<section> xxx
+					<section><img src="slides/xxx/slide1.png" height="100%" width="100%"></section>
+					<section><img src="slides/xxx/slide2.png" height="100%" width="100%"></section>
+				  <section>
+				    <iframe data-src="slides/xxx.html" width="800" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 600%;" allowfullscreen=""></iframe>
+				  </section>
+			  </section>
+				<section>xxx
+					<section><img src="slides/xxx/slide1.png" height="100%" width="100%"></section>
+					<section><img src="slides/xxx/slide2.png" height="100%" width="100%"></section>
+				</section>
+				<section>xxx Off<br>
+					<img src="https://media.giphy.com/media/l2Jhvsy8G1gukQRs4/giphy.gif" height="50%" width="50%">
+					<img src="images/bake-off.png" height="25%" width="25%">
+					<div class="bakeOff"><ul style="font-size:50%">
+						<li>xxx</li>
+						<li>xxx</li>
+				</ul>
+				</section>
+				<section>and by popular demand - an explanation of vote counting theorems<img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" height="75%" width="75%">
+				</section>
+
+				<section class="intro" data-autoslide="5000"><iframe width="0" height="0" src="https://www.youtube.com/embed/tGsKzZtRwxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-autoplay data-ignore></iframe>
+					A long time ago, in a galaxy far,<br> far away....
+				</section>
+				<section class="star-wars stretch">
+					<div class="fade"></div>
+						<div class="crawl">
+							<div class="title">
+			      				<h3>Episode IV</h3>
+			      				<h1>A New Star of the Month</h1>
+			    			</div class = "starText"><h3>
+							    <h3>It is a period of civil war. Twelve data jedi have been vying for power </h3>
+							    <br>
+							    <br>
+							    <h3><strong> xxx:</strong><br>xxx </h3>
+							    <br>
+							    <h3><strong>xxx:</strong><br>xxx</h3>
+							   
+  						</h3></div>
+				</section>
+				<section ><strong>The Christmas Committee </strong>
+					<br>
+					<img src="https://media.giphy.com/media/HSmv5zTMqNh1C/giphy.gif" height="75%" width="75%">
+					<br>xxx
+				</section>
+				<section><iframe width="0" height="0" src="https://www.youtube.com/embed/4U7DayFVnHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-autoplay data-ignore></iframe>
+					<img src="https://media.giphy.com/media/upg0i1m4DLe5q/giphy.gif" height="75%" width="75%">
+
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				keyboard: true,
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+
+
+			});
+
+		</script>
+	</body>
+
+	<iframe width="0" height="0" src="https://www.youtube.com/embed/tGsKzZtRwxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-autoplay data-ignore></iframe>
+</html>
